@@ -17,9 +17,9 @@ const LoginPage = () => {
         console.log("Logging in...");
         try {
             const result = await firebase.signinUserWithEmailAndPassword(email, password);
-            console.log("Login successful:", result);
+            console.log("Login successful:");
         } catch (error) {
-            console.error("Login error:", error);
+            console.error("Login error:");
         }
     };
 

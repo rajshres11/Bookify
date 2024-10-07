@@ -12,11 +12,11 @@ const ViewOrder = () => {
             console.log("Fetching books for user:", firebase.user.uid);
             firebase.fetchMyBooks(firebase.user.uid)
                 .then((books) => {
-                    console.log("Books fetched:", books.docs);
+                    console.log("Books fetched:");
                     setBooks(books.docs);
                 })
                 .catch((error) => {
-                    console.error("Error fetching books:", error);
+                    console.error("Error fetching books:");
                 });
         }
     }, [firebase]);

@@ -16,12 +16,12 @@ const ViewOrderDetail = () => {
                     if (orders.docs.length === 0) {
                         console.log("No orders found for this book");
                     } else {
-                        console.log("Orders fetched:", orders.docs);
+                        console.log("Orders fetched:");
                     }
                     setOrders(orders.docs);
                 })
                 .catch((error) => {
-                    console.error("Error fetching orders:", error);
+                    console.error("Error fetching orders:");
                 });
         }
     }, [firebase, params.bookId]);

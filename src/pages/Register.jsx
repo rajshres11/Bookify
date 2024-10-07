@@ -17,9 +17,9 @@ const Register = () => {
         console.log("Signing up...");
         try {
             const result = await firebase.signupUserWithEmailAndPassword(email, password);
-            console.log("Registration successful:", result);
+            console.log("Registration successful:");
         } catch (error) {
-            console.error("Registration error:", error);
+            console.error("Registration error:");
         }
     };
 

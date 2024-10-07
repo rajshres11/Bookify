@@ -61,7 +61,7 @@ export const FirebaseProvider = (props) => {
 
     const isloggedIn = user ? true : false
 
-    console.log(user)
+    // console.log(user)
 
     const handleCreateNewListing = async (name,isbn,price,coverPic)=>{
         const imageRef = ref(storage,`uplaods/images/${Date.now()}-${coverPic.name}`)
