@@ -1,0 +1,29 @@
+.login-container {
+    max-width: 400px; /* Limit the width for better readability */
+    margin: auto;
+    padding: 20px;
+    background-color: #f8f9fa; /* Light background color */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.login-title {
+    text-align: center;
+    color: #343a40; /* Dark color for title */
+    margin-bottom: 20px;
+}
+
+.or-text {
+    text-align: center;
+    margin: 20px 0; /* Space around "Or" text */
+}
+
+.login-button, .google-button {
+    width: 100%; /* Full width for buttons */
+    margin-top: 10px; /* Space above buttons */
+}
+
+.alert {
+    text-align: center;
+    color: #dc3545; /* Red color for error messages */
+}

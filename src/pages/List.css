@@ -1,0 +1,31 @@
+.list-container {
+    max-width: 600px; /* Limit the width for better readability */
+    margin: auto;
+    padding: 20px;
+    background-color: #f8f9fa; /* Light background color */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-title {
+    text-align: center;
+    color: #343a40; /* Dark color for title */
+    margin-bottom: 20px;
+}
+
+.listing-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.listing-form .form-group {
+    margin-bottom: 15px;
+}
+
+.create-button {
+    margin-top: 10px;
+}
+
+.alert {
+    text-align: center;
+}

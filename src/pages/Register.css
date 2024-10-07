@@ -1,0 +1,19 @@
+.register-container {
+    max-width: 400px; /* Limit the width for better readability */
+    margin: auto;
+    padding: 20px;
+    background-color: #f8f9fa; /* Light background color */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.register-title {
+    text-align: center;
+    color: #343a40; /* Dark color for title */
+    margin-bottom: 20px;
+}
+
+.create-account-button {
+    width: 100%; /* Full width for the button */
+    margin-top: 10px; /* Space above the button */
+}

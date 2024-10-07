@@ -1,0 +1,30 @@
+.custom-navbar {
+    background-color: #343a40;
+    padding: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .custom-navbar .navbar-brand {
+    font-size: 1.5rem;
+    color: #fff;
+  }
+  
+  .custom-navbar .nav-link {
+    margin-right: 1rem;
+    font-size: 1.1rem;
+    color: #ccc !important;
+    transition: color 0.3s ease;
+  }
+  
+  .custom-navbar .nav-link:hover {
+    color: #fff !important;
+  }
+  
+  @media (max-width: 992px) {
+    .custom-navbar .nav-link {
+      margin: 0.5rem 0;
+      text-align: center;
+      
+    }
+  }
+  

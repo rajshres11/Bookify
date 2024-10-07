@@ -1,0 +1,36 @@
+.view-order-detail-container {
+    max-width: 600px; /* Limit the width for better readability */
+    margin: auto;
+    padding: 20px;
+    background-color: #f8f9fa; /* Light background color */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    text-align: center;
+    color: #343a40;
+}
+
+.no-orders-message {
+    text-align: center;
+    color: #dc3545; /* Red color for error message */
+}
+
+.order-list {
+    margin-top: 20px;
+}
+
+.order-card {
+    background: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.order-username,
+.order-email {
+    margin: 5px 0;
+    color: #343a40; /* Dark color for text */
+}
