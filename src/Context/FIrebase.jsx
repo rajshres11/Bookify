@@ -107,12 +107,18 @@ export const FirebaseProvider = (props) => {
         const q = query(collectionRef, where("userID",'==',userId))
         const result =await getDocs(q)
         return result
-    }
+    } 
+
+    // 
+    const signOut = () => {
+        return firebaseAuth.signOut(); // This will sign out the user
+    };
+    
 
 
 
     return(
-        <FirebaseContext.Provider value={{signupUserWithEmailAndPassword,signinUserWithEmailAndPassword,signWithGoogle,isloggedIn,handleCreateNewListing,listAllBooks,getImageURL,getBookById,placeOrder,fetchMyBooks,user,getOrders}}>
+        <FirebaseContext.Provider value={{signupUserWithEmailAndPassword,signinUserWithEmailAndPassword,signWithGoogle,isloggedIn,handleCreateNewListing,listAllBooks,getImageURL,getBookById,placeOrder,fetchMyBooks,user,getOrders,signOut}}>
             {props.children}        
         </FirebaseContext.Provider>
     )

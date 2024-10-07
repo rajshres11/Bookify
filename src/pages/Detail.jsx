@@ -36,18 +36,20 @@ const Detail = () => {
 
     return (
         <div className="detail-container">
-            <h1 className="detail-title">{data.name}</h1>
+        <div className="detail-box">
             {url && <img src={url} alt={data.name} className="detail-image" />}
-            <h2>Details</h2>
-            <h4 className="detail-price">Price: Rs.{data.price}</h4>
-            <p><strong>ISBN:</strong> {data.isbn}</p>
-            <h3>Owner: {data.displayname}</h3>
-            <p><strong>Email:</strong> {data.userEmail}</p>
-            <Button onClick={placeOrder} variant="success" className="buy-button">Buy Now</Button>
-
-            {/* Display success message after order is placed */}
-            {orderSuccess && <div className="alert alert-success mt-3">Order placed successfully!</div>}
+            <div className="detail-info">
+                <h1 className="detail-title">{data.name}</h1>
+                <h2>Details</h2>
+                <h4 className="detail-price">Price: Rs.{data.price}</h4>
+                <p><strong>ISBN:</strong> {data.isbn}</p>
+                <h3>Owner: {data.displayname}</h3>
+                <p><strong>Email:</strong> {data.userEmail}</p>
+                <Button onClick={placeOrder} variant="success" className="buy-button ">Buy Now</Button>
+            </div>
         </div>
+        {orderSuccess && <div className="alert alert-success mt-3">Order placed successfully!</div>}
+    </div>
     );
 };
 

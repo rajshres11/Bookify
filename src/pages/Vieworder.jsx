@@ -21,7 +21,7 @@ const ViewOrder = () => {
         }
     }, [firebase]);
 
-    if (!firebase.isloggedIn) return <h1>Please login</h1>;
+    if (!firebase.isloggedIn) return <h1>loading...</h1>;
 
     return (
         <div className="view-order-container">
